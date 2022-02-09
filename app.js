@@ -4,6 +4,7 @@ const mongoose=require('mongoose')
 const {userModel}=require('./models/users')
 const bcrpt=require('bcrypt')
 const jwt=require('jsonwebtoken')
+const port = process.env.PORT || 8000
 
 
 let app = express()
@@ -159,6 +160,6 @@ else{
 })
 
 
-app.listen(process.env.PORT || 3001,()=>{
+app.listen(port ,()=>{
     console.log("server running ......")
 })
