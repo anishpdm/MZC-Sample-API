@@ -13,13 +13,13 @@ app.use(bodyParser.json())
 
 
 // CORS Policy
-app.use( (req,res,next)=>{
-    res.setHeader('Access-Control-Allow-Origin','*');
-    res.setHeader('Access-Control-Allow-Methods','GET','POST');
-    res.setHeader('Access-Control-Allow-Headers','X-Requested-With,content-type')
-    res.setHeader('Access-Control-Allow-Credentials',true)
-    next()
-} )
+// app.use( (req,res,next)=>{
+//     res.setHeader('Access-Control-Allow-Origin','*');
+//     res.setHeader('Access-Control-Allow-Methods','GET','POST');
+//     res.setHeader('Access-Control-Allow-Headers','X-Requested-With,content-type')
+//     res.setHeader('Access-Control-Allow-Credentials',true)
+//     next()
+// } )
 
 mongoose.connect('mongodb+srv://userone:userone@cluster0.vcc0q.mongodb.net/MzcTest',  {
     useNewUrlParser: true,
