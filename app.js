@@ -4,7 +4,7 @@ const mongoose=require('mongoose')
 const {userModel}=require('./models/users')
 const bcrpt=require('bcrypt')
 const jwt=require('jsonwebtoken')
-const port = process.env.PORT || 8000
+const port = process.env.PORT || 3000
 
 
 let app = express()
